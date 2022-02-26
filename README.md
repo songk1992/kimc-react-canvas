@@ -1,38 +1,98 @@
+<div align="center">
+<h1>Kimc React Canvas Draw</h1>
+</div>
+
+> Simply lets Draw something on canvas
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### Why
+
+I made this project
+because I could not find any open souce library that fits my need of
+simple drawing tool for react that could easily be used for other projects
+
+가벼운 오픈 라이프러리를 사용해서 캔버스 그림판을 만들고자 했는데
+그러한 오픈 소스 라이브러리를 찾을수 없어서 직접 만듬
+
+### Demo
+
+<br />
+<br />
+
+<p align="center">
+  <img src="./show/ver01.gif" alt="screenshot">
+</p>
+
+<br />
+<br />
+
+### Functions
+
+done   
+
+done   
+
+TODO   
+Save
+Load
+Export
+Clear
+paint
+Erase
+eraseAll
+undo
+redo
+moving objects
+text
+sticker   
+TODO   
 
 ## Getting Started
 
-First, run the development server:
+Pull Repo and use it   
+or use KimcCanvas component and use index.js as reference
 
 ```bash
-
+# made using next
 yarn create next-app
 
-
+# run
 npm run dev
-# or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Props
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+``` javascript
+  const kimcCanvasOptions = {
+    // canvas setting
+    width: "1920px",
+    height: "1080px",
+    backgroundColor: "rgba(0,0,0,0.1)",
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+    // ctx setting
+    strokeStyle: "rgba(255,0,255,0.1)",
+    lineWidth: 10,
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    isDrawing: false,
+  };
+```
 
-## Learn More
+## reference
 
-To learn more about Next.js, take a look at the following resources:
+https://reactjs.org/
+https://www.youtube.com/watch?v=FLESHMJ-bI0
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://github.com/excalidraw/excalidraw
+https://github.com/konvajs/konva
+https://github.com/embiem/react-canvas-draw
+https://github.com/tldraw/tldraw
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## reference02
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement
+https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/save
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+https://stackoverflow.com/questions/6011378/how-to-add-image-to-canvas

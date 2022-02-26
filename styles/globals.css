@@ -1,5 +1,6 @@
 html,
 body {
+  background-color: #1e1e1e;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -13,4 +14,75 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.kimc-main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* button */
+.kimc-main-ui-btn {
+  position: absolute;
+  box-shadow: 0px 3px 0px 0px #37e607;
+  background-color: #44c767;
+  border-radius: 50%;
+  border: 4px solid #ccff00;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 20px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  right: 100px;
+  bottom: 100px;
+  width: 100px;
+  height: 100px;
+}
+.kimc-main-ui-btn:hover {
+	background-color:#5cbf2a;
+}
+.kimc-main-ui-btn:active {
+  transition: 0.5s ease;
+  bottom: 95px;
+}
+
+/* control */
+.kimc-main-ui-control{
+
+  position: absolute;
+  background-image: radial-gradient(circle at -10.3% 44.72%, #ffff8c 0, #ffff89 6.25%, #f6ff88 12.5%, #e2ff89 18.75%, #ccff8a 25%, #b3ff8d 31.25%, #98ff91 37.5%, #76fd97 43.75%, #46f99e 50%, #00f5a7 56.25%, #00f0b1 62.5%, #00ecbe 68.75%, #00e9cc 75%, #00e5db 81.25%, #00e1ea 87.5%, #00defa 93.75%, #00dbff 100%);
+  left: 100px;
+  top: 100px;
+  width: 200px;
+}
+
+.kimc-main-ui-control div{
+  margin-top: 20px;
+  margin-left: 25px;
+  color: black;
+  font-weight: 900;
+}
+
+.kimc-main-ui-control div:last-of-type{
+  margin-bottom: 20px;
+}
+
+.kimc-main-ui-control div span{
+  display: block;
+  margin-right: 25px;
+}
+
+.kimc-main-ui-control div input{
+  width: 150px;
+}
+
+.kimc-main-ui-control div button{
+  color: black;
+  font-weight: 900;
 }
