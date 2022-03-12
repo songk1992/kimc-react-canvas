@@ -28,6 +28,21 @@ simple drawing tool for react that could easily be used for other projects
 <br />
 <br />
 
+### Development Log
+
+2022-03-12
+made simple raster graphics based app with simple functions 
+then realised that I should remake the entire thing using vector graphics
+
+래스터 기반으로 간단하게 만들다가 벡터 그래픽 기반으로 바꿔야 된다는 생각이 들었음
+
+Pending
+보류중
+
+
+<br />
+<br />
+
 ### Functions
 
 done   
@@ -89,6 +104,10 @@ https://github.com/excalidraw/excalidraw
 https://github.com/konvajs/konva
 https://github.com/embiem/react-canvas-draw
 https://github.com/tldraw/tldraw
+
+https://github.com/Desousak/svg-pen-sketch
+https://editor.method.ac/
+https://github.com/svgdotjs/svg.draw.js/
 
 ## reference02
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement
